@@ -1,15 +1,12 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "definitions/chakra/theme";
-import "styles/global.css";
 
-import Home from "pages";
+import Checkout from "pages/checkout";
 
 function App(): JSX.Element {
   return (
     <ChakraProvider theme={theme}>
-      <div className="App">
-        <Home />
-      </div>
+      <Checkout />
     </ChakraProvider>
   );
 }
